@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>评价表排序</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet/less" href="../css/style.less" />
+		<script src="../scripts/less-2.5.3.min.js"></script>
+		<script src="../scripts/jquery-1.8.3.min.js"></script>
+		<script src="../scripts/public.js"></script>
+		<script src="../scripts/layer/layer.js"></script>
+		<script>
+			$(function(){
+				//$('#header').load('header.html');
+				$('#footer').load('../footer.html');
+				var type = window.location.href.queryURLParameter();
+				console.log(type.type)
+				if(type.type=='immediate'){
+					$('#secnav li:eq(1)').addClass('active').siblings().removeClass('active');
+					$('#Release,#save').show();
+				}else if(type.type=="code"){
+					$('#secnav li:eq(2)').addClass('active').siblings().removeClass('active');
+					$('#ReleaseCode').show();
+				}
+				$('#prevStep').click(function(){
+					window.location.href='AddEvalTable.html?type='+type.type;
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="top">
+			<header id="header">
+				<div class="width clearfix">
+					<div class="logo fl">
+						<img src="../images/logo.png"/>
+					</div>
+					<div class="accout-wrap fr clearfix">
+						<span class="fl"><img src="../images/ren.jpg"/></span>
+						<em>管理员<i class="iconfont">&#xe6d7;</i></em>
+						<div class="account_none">
+							<a href="javascript:;">修改密码</a>
+							<a href="javascript:;">退出</a>
+						</div>
+					</div>
+					<div class="nav fr">
+						<ul class="clearfix">
+							<li >
+								<a href="../TeacherIndex.html">首页</a>
+							</li>
+							<li class="active">
+								<a href="TeaRegEval.html">我的评价</a>
+							</li>
+							<li>
+								<a href="">互动反馈</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="header_bottom">
+				<div class="width clearfix">
+					<dl class="fl clearfix ren">
+	                    <dt class="fl">
+	                        <img src="../images/ren.jpg"></dt>
+	                    <dd  class="fl">
+	                        <h1 id="username">超级管理员</h1>
+	                        <h2>欢迎回来</h2>
+	                    </dd>
+	                </dl>
+	                <div class="secnav fl" id="secnav">
+	                	<ul class="clearfix">
+	                		<li>
+	                			<a href="TeaRegEval.html">定期评价</a>
+	                		</li>
+	                		<li>
+	                			<a href="TeaImmedEval.html">即时评价</a>
+	                		</li>
+	                		<li>
+	                			<a href="TeaCodeEval.html">扫码评价</a>
+	                		</li>
+	                	</ul>
+	                </div>
+	                <div class="track_record fr clearfix">
+	                    <a class="fl record_fl" href="javascript:;">
+	                        <h1>待评价</h1>
+	                        <h2>10</h2>
+	                    </a>
+	                    <a class="fl record_fl" href="javascript:;">
+	                        <h1>未读消息</h1>
+	                        <h2>340</h2>
+	                    </a>
+	                </div>
+				</div>
+			</div>
+		</div>
+		<div id="container"  class="width">
+			<div class="content clearix">
+				<div class="tableheader">
+					<h1 class="tablename">教学质量评价</h1>
+					<div class="evalmes">
+						<span>
+							总分：100分
+						</span>
+						<span>
+							备注：教学质量评价
+						</span>
+						<span>
+							起止时间：2017-03-12~2017-04-12
+						</span>
+					</div>
+				</div>
+				<div class="test_lists">
+					<ul>
+						<li>
+							<h2 class="title">1、学生对课程的满意度调查<span>(20分)</span></h2>
+							<div class="test_desc">
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>A非常满意</em>
+									<b>(20分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>B满意</em>
+									<b>(10分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>C一般</em>
+									<b>(20分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>D不满意</em>
+									<b>(20分)</b>
+								</span>
+							</div>
+							<div class="operates">
+								<i class="iconfont color_gray">&#xe626;</i>
+								<i class="iconfont color_green">&#xe603;</i>
+								<i class="iconfont color_green">&#xe604;</i>
+							</div>
+						</li>
+						<li>
+							<h2 class="title">1、学生对课程的满意度调查<span>(20分)</span></h2>
+							<div class="test_desc">
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>A非常满意</em>
+									<b>(20分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>B满意</em>
+									<b>(10分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>C一般</em>
+									<b>(20分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>D不满意</em>
+									<b>(20分)</b>
+								</span>
+							</div>
+							<div class="operates">
+								<i class="iconfont color_green">&#xe626;</i>
+								<i class="iconfont color_green">&#xe603;</i>
+								<i class="iconfont color_green">&#xe604;</i>
+							</div>
+						</li>
+						<li>
+							<h2 class="title">1、学生对课程的满意度调查<span>(20分)</span></h2>
+							<div class="test_desc">
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>A非常满意</em>
+									<b>(20分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>B满意</em>
+									<b>(10分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>C一般</em>
+									<b>(20分)</b>
+								</span>
+								<span>
+									<input type="radio" name="" id="" value="" />
+									<em>D不满意</em>
+									<b>(20分)</b>
+								</span>
+							</div>
+							<div class="operates">
+								<i class="iconfont color_green">&#xe626;</i>
+								<i class="iconfont color_green">&#xe603;</i>
+								<i class="iconfont color_green">&#xe604;</i>
+							</div>
+						</li>
+						<li>
+							<h2 class="title">1、学生对课程的满意度调查<span>(20分)</span></h2>
+							<div class="test_desc">
+								<span>
+									<input type="checkbox" name="" id="" value="" />
+									<em>A非常满意</em>
+									<b>(20分)</b>
+								</span>
+								<span>
+									<input type="checkbox" name="" id="" value="" />
+									<em>B满意</em>
+									<b>(10分)</b>
+								</span>
+								<span>
+									<input type="checkbox" name="" id="" value="" />
+									<em>C一般</em>
+									<b>(20分)</b>
+								</span>
+								<span>
+									<input type="checkbox" name="" id="" value="" />
+									<em>D不满意</em>
+									<b>(20分)</b>
+								</span>
+							</div>
+							<div class="operates">
+								<i class="iconfont color_green">&#xe626;</i>
+								<i class="iconfont color_green">&#xe603;</i>
+								<i class="iconfont color_green">&#xe604;</i>
+							</div>
+						</li>
+						<li>
+							<h2 class="title">1、学生对课程的满意度调查<span>(20分)</span></h2>
+							<div class="test_desc">
+								<textarea name="" rows="" cols=""></textarea>
+							</div>
+							<div class="operates">
+								<i class="iconfont color_green">&#xe626;</i>
+								<i class="iconfont color_gray">&#xe603;</i>
+								<i class="iconfont color_green">&#xe604;</i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="btnwrap" style="position:static;">
+					<input type="button" value="发布并生成二维码" class="btn" onclick="OpenIFrameWindow('二维码','QRcode.html.html','500px','560px')" id="ReleaseCode" style="display: none;"/>
+					<input type="button" value="发布" class="btn" onclick="OpenIFrameWindow('发布任务','ReleaseTask.html','600px','360px')" id="Release" style="display: none;"/>
+					<input type="button" value="上一步" class="btna" id="prevStep" />
+					<span onclick="window.location.href='TeaImmedEval.html'" id="save" style="display: none;">仅保存暂不发布</span>
+				</div>
+			</div>
+		</div>
+		<footer id="footer"></footer>
+		<script>
+			
+		</script>
+	</body>
+</html>

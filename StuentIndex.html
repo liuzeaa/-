@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>学生首页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet/less" href="css/style.less" />
+		<script src="scripts/less-2.5.3.min.js"></script>
+		<script src="scripts/jquery-1.8.3.min.js"></script>
+		<script src="scripts/public.js"></script>
+		<script>
+			$(function(){
+				//$('#header').load('header.html');
+				$('#footer').load('footer.html');
+			})
+		</script>
+	</head>
+	<body>
+		<div id="top">
+			<header id="header">
+				<div class="width clearfix">
+					<div class="logo fl">
+						<img src="images/logo.png"/>
+					</div>
+					<div class="accout-wrap fr clearfix">
+						<span class="fl"><img src="images/ren.jpg"/></span>
+						<em>学生姓名<i class="iconfont">&#xe6d7;</i></em>
+						<div class="account_none">
+							<a href="javascript:;">修改密码</a>
+							<a href="javascript:;">退出</a>
+						</div>
+					</div>
+					<div class="nav fr">
+						<ul class="clearfix">
+							<li class="active">
+								<a href="StuentIndex.html">首页</a>
+							</li>
+							<li>
+								<a href="MyEvaluation/MyEvaluation.html">我的评价</a>
+							</li>
+							<li>
+								<a href="">互动反馈</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="header_bottom">
+				<div class="width clearfix">
+					<dl class="fl clearfix ren">
+	                    <dt class="fl">
+	                        <img src="images/ren.jpg"></dt>
+	                    <dd  class="fl">
+	                        <h1 id="username">学生姓名</h1>
+	                        <h2>欢迎回来</h2>
+	                    </dd>
+	                </dl>
+	                
+	                <div class="track_record fr clearfix">
+	                    <a class="fl record_fl" href="javascript:;">
+	                        <h1>待评价</h1>
+	                        <h2>10</h2>
+	                    </a>
+	                    <a class="fl record_fl" href="javascript:;">
+	                        <h1>未读消息</h1>
+	                        <h2>340</h2>
+	                    </a>
+	                </div>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="clearfix width pt20">
+				<div class="content_left fl">
+					<div class="title_nav clearfix">
+						<div class="titlenav_left fl">
+							全部评价
+						</div>
+						<div class="titlenav_right fr">
+							<span>查看：</span>
+							<ul>
+								<li class="selected">默认</li>
+								<li>已评价</li>
+								<li>待评价</li>
+							</ul>
+						</div>
+					</div>
+					<div class="search_toobar clearfix">
+						<div class="fl">
+							<label for="">学年学期:</label>
+							<select class="select">
+								<option value="">2016年第一学期</option>
+							</select>
+						</div>
+						<div class="fl ml10">
+							<label for="">评价类型:</label>
+							<select class="select">
+								<option value="">学初评价</option>
+							</select>
+						</div>
+						<div class="fl ml10">
+							<input type="text" name="" id="" placeholder="请输入关键字" value="" class="text fl">
+							<a class="search fl" href="javascript:;"><i class="iconfont">&#xe605;</i></a>
+						</div>
+					</div>
+					<div class="table">
+						<table>
+							<thead>
+								<tr>
+									<th>
+										学年学期			 									   	
+									</th>
+									<th>
+										课程名称
+									</th>
+									<th>
+										评价类型
+									</th>
+									<th>
+										教师名称
+									</th>
+									<th>
+										操作
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2016年第一学期</td>
+									<td>工业设计课程</td>
+									<td>学初评价</td>
+									<td>李丽华</td>
+									<td class="operate_wrap">
+										<div class="operate">
+											<i class="iconfont color_blue">&#xe630;</i>
+											<span class="operate_none bg_blue">
+												查看
+											</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>2016年第一学期</td>
+									<td>工业设计课程</td>
+									<td>学初评价</td>
+									<td>李丽华</td>
+									<td class="operate_wrap">
+										<div class="operate">
+											<i class="iconfont color_green">&#xe61c;</i>
+											<span class="operate_none bg_green">
+												编辑
+											</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="content_right fr">
+					<div class="module">
+						<h1 class="title">提醒通知</h1>
+						<ul class="lists">
+							<li>
+								<i class="i1">1</i>
+								<a href="">新年一年的学期评价开始了，同学们行动起来吧</a>
+							</li>
+							<li>
+								<i class="i1">2</i>
+								<a href="">新年一年的学期评价开始了，同学们行动起来吧</a>
+							</li>
+							<li>
+								<i class="i1">3</i>
+								<a href="">新年一年的学期评价开始了，同学们行动起来吧</a>
+							</li>
+							<li>
+								<i class="i2">4</i>
+								<a href="">新年一年的学期评价开始了，同学们行动起来吧</a>
+							</li>
+							<li>
+								<i class="i2">5</i>
+								<a href="">新年一年的学期评价开始了，同学们行动起来吧</a>
+							</li>
+						</ul>
+					</div>
+					<div class="module mt20">
+						<h1 class="title">互动讨论</h1>
+						<ul class="lists">
+							<li>
+								<i class="i3">1</i>
+								<a href="">胡立彬老师在学初评价中回复了你</a>
+							</li>
+							<li>
+								<i class="i3">2</i>
+								<a href="">胡立彬老师在学初评价中回复了你</a>
+							</li>
+							<li>
+								<i class="i3">3</i>
+								<a href="">胡立彬老师在学初评价中回复了你</a>
+							</li>
+							<li>
+								<i class="i4">4</i>
+								<a href="">胡立彬老师在学初评价中回复了你</a>
+							</li>
+							<li>
+								<i class="i4">5</i>
+								<a href="">胡立彬老师在学初评价中回复了你</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer"></footer>
+		<script>
+			$(function(){
+				tableSlide();
+			})
+		</script>
+	</body>
+</html>

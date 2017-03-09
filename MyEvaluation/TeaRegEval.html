@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>定期评价</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet/less" href="../css/style.less" />
+		<script src="../scripts/less-2.5.3.min.js"></script>
+		<script src="../scripts/jquery-1.8.3.min.js"></script>
+		<script src="../scripts/public.js"></script>
+		<script>
+			$(function(){
+				//$('#header').load('header.html');
+				$('#footer').load('../footer.html');
+			})
+		</script>
+	</head>
+	<body>
+		<div id="top">
+			<header id="header">
+				<div class="width clearfix">
+					<div class="logo fl">
+						<img src="../images/logo.png"/>
+					</div>
+					<div class="accout-wrap fr clearfix">
+						<span class="fl"><img src="../images/ren.jpg"/></span>
+						<em>管理员<i class="iconfont">&#xe6d7;</i></em>
+						<div class="account_none">
+							<a href="javascript:;">修改密码</a>
+							<a href="javascript:;">退出</a>
+						</div>
+					</div>
+					<div class="nav fr">
+						<ul class="clearfix">
+							<li >
+								<a href="../TeacherIndex.html">首页</a>
+							</li>
+							<li class="active">
+								<a href="TeaRegEval.html">我的评价</a>
+							</li>
+							<li>
+								<a href="TeaCodeEval.html">互动反馈</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="header_bottom">
+				<div class="width clearfix">
+					<dl class="fl clearfix ren">
+	                    <dt class="fl">
+	                        <img src="../images/ren.jpg"></dt>
+	                    <dd  class="fl">
+	                        <h1 id="username">超级管理员</h1>
+	                        <h2>欢迎回来</h2>
+	                    </dd>
+	                </dl>
+	                <div class="secnav fl">
+	                	<ul class="clearfix">
+	                		<li   class="active">
+	                			<a href="TeaRegEval.html">定期评价</a>
+	                		</li>
+	                		<li >
+	                			<a href="TeaImmedEval.html">即时评价</a>
+	                		</li>
+	                		<li>
+	                			<a href="">扫码评价</a>
+	                		</li>
+	                	</ul>
+	                </div>
+	                <div class="track_record fr clearfix">
+	                    <a class="fl record_fl" href="javascript:;">
+	                        <h1>待评价</h1>
+	                        <h2>10</h2>
+	                    </a>
+	                    <a class="fl record_fl" href="javascript:;">
+	                        <h1>未读消息</h1>
+	                        <h2>340</h2>
+	                    </a>
+	                </div>
+				</div>
+			</div>
+		</div>
+		<div id="container"  class="width">
+			<div class="content clearix">
+				<div class="search_toobar clearfix">
+					<div class="fl">
+						<label for="">学年学期:</label>
+						<select class="select">
+							<option value="">2016年第一学期</option>
+						</select>
+					</div> 
+					<div class="fl ml20">
+						<label for="">评价名称:</label>
+						<select class="select">
+							<option value="">学初评价</option>
+						</select>
+					</div>
+					<div class="fl ml20">
+						<input type="text" name="" id="" placeholder="请输入关键字" value="" class="text fl">
+						<a class="search fl" href="javascript:;"><i class="iconfont">&#xe605;</i></a>
+					</div>
+				</div>
+				<div class="tableheader">
+					<h1 class="tablename">学初评价</h1>
+					<div class="evalmes">
+						<span>
+							评价名称：定期评价
+						</span>
+						<span>
+							学年学期：2016年第一学期
+						</span>
+						<span>
+							评价时间：2017-03-12~2017-04-12
+						</span>
+						<span>
+							全部评价人数：150人
+						</span>
+						<span>
+							实际评价人数：143人
+						</span>
+						<span>
+							平均分:94
+						</span>
+					</div>
+				</div>
+				<h1 class="title_ti">一、主观题（6题）</h1>
+				<table class="statable">
+					<thead>
+						<tr>
+							<th>
+								
+							</th>
+							<th>
+								测评内容
+							</th>
+							<th width="5%">
+								A
+							</th>
+							<th width="5%">
+								B
+							</th>
+							<th width="5%">
+								C
+							</th>
+							<th width="5%">
+								D
+							</th>
+							<th width="5%">
+								E
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="6" style="width:20px;padding:0px 20px;">
+								教学态度
+							</td>
+							<td style="text-align: left;padding-left: 20px;">
+								1．老师对教学工作有热情，讲课认真、投入。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td class="nothave"></td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								2．老师上课不迟到不早退，课上不接打手机。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								3．老师不仅教书，还能够正确引导我们学会为人处世。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								4．老师对我们的出勤、听课、作业、考试等都能严格要求。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								5．我们在课后遇到学习方面的问题时能得到老师认真的帮助。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								6．我们的作业、论文等能得到老师的认真评判与反馈。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td rowspan="3" style="width:20px;padding:0px 20px;">
+								教学内容
+							</td>
+							<td style="text-align: left;padding-left: 20px;">
+								7．我从老师的教学中学到了教材之外的专业知识。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td class="nothave"></td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								8．老师会向我们介绍相关领域的不同学术观点，有时还会介绍自己的最新研究成果。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								9．老师会通过各种方式让我们知晓本课程、本章节的教学目标、教学要求。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td rowspan="6" style="width:20px;padding:0px 20px;">
+								教学方法及手段
+							</td>
+							<td style="text-align: left;padding-left: 20px;">
+								10．老师会灵活运用各种教学手段（如多媒体、板书、教具等），帮助我们理解学习内容。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td class="nothave"></td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								11．老师会灵活运用各种教学方法（如讲授、讨论、观察、实验或实践等），提高我们的学习效果。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								12．老师会举例或运用个人经验帮助我们理解学习内容
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								13．我们在课堂上有机会与老师和同学交流思想。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								14．老师注意教给我们学习与分析问题的方法。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td  style="text-align: left;padding-left: 20px;">
+								15．老师能根据我们的学习情况调节教学进度。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td style="width:20px;padding:0px 20px;">
+								效果
+							</td>
+							<td style="text-align: left;padding-left: 20px;">
+								16．我认为老师该门课程的教学效果很好。
+							</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td>120</td>
+							<td class="nothave"></td>
+						</tr>
+					</tbody>
+				</table>
+				<h1 class="title_ti">二、客观题（4题）</h1>
+				<ul class="objective_lists"> 
+					<li>
+						<dt class="clearfix">
+							<div class="objective_name fl">
+								1.你感觉老师的课讲的怎么样，有没有要改进的地方？
+							</div>
+							<div class="toggle fr">
+								<i class="iconfont">&#xe632;</i>
+							</div>
+						</dt>
+						<dd>
+							<div class="request_body">
+								<div class="lists_row">
+									<a class="img" href="">
+										<img src="../images/niming.png" alt="" />
+									</a>
+									<span>
+										讲话的生动：惟妙惟肖 津津有味 绘声绘色 娓娓动听 妙语连珠 滔滔不绝 余音袅袅 活神活现出口成章 行云流水。内容的精彩：引人入胜 如痴如醉 思绪万千 身临其境 字字珠玑 一字千金 精彩绝伦 扣人心弦 韵味无穷 精彩纷呈 跌宕起伏 纷繁复杂 一波三折 文不加点 回肠荡气 文采飞扬 妙趣横生 辞采华美。讲话的生动：惟妙惟肖 津津有味 绘声绘色 娓娓动听 妙语连珠 滔滔不绝 余音袅袅 活神活现出口成章 行云流水。内容的精彩：引人入胜 如痴如醉 思绪万千 身临其境 字字珠玑 一字千金 精彩绝伦 扣人心弦 韵味无穷 精彩纷呈 跌宕起伏 纷繁复杂 一波三折 文不加点 回肠荡气 文采飞扬 妙趣横生 辞采华美。
+										<b class="fr">提交时间：2017-02-20 08:00</b>
+									</span>
+								</div>
+								<div class="lists_row">
+									<a class="img"  href="">
+										<img src="../images/niming.png" alt="" />
+									</a>
+									<span>
+										讲话的生动：惟妙惟肖 津津有味 绘声绘色 娓娓动听 妙语连珠 滔滔不绝 余音袅袅 活神活现出口成章 行云流水。内容的精彩：引人入胜 如痴如醉 思绪万千 身临其境 字字珠玑 一字千金 精彩绝伦 扣人心弦 韵味无穷 精彩纷呈 跌宕起伏 纷繁复杂 一波三折 文不加点 回肠荡气 文采飞扬 妙趣横生 辞采华美。讲话的生动：惟妙惟肖 津津有味 绘声绘色 娓娓动听 妙语连珠 滔滔不绝 余音袅袅 活神活现出口成章 行云流水。内容的精彩：引人入胜 如痴如醉 思绪万千 身临其境 字字珠玑 一字千金 精彩绝伦 扣人心弦 韵味无穷 精彩纷呈 跌宕起伏 纷繁复杂 一波三折 文不加点 回肠荡气 文采飞扬 妙趣横生 辞采华美。
+										<b class="fr">提交时间：2017-02-20 08:00</b>
+									</span>
+								</div>
+							</div>
+							<div class="page">
+								<a href="">首页</a>
+								<a href="" class="now">1</a>
+								<a href="">2</a>
+								<a href="">3</a>
+								<a href="">4</a>
+								<a href="">5</a>
+								<a href="">6</a>
+								<a href="">7</a>
+								<a href="">8</a>
+								<a href="">9</a>
+								<a href="">10</a>
+								<a href="">尾页</a>
+								<a href="">上一页</a>
+								<a href="">下一页</a>
+							</div>
+						</dd>
+					</li>
+					<li>
+						<dt class="clearfix">
+							<div class="objective_name fl">
+								1.你感觉老师的课讲的怎么样，有没有要改进的地方？
+							</div>
+							<div class="toggle fr">
+								<i class="iconfont">&#xe632;</i>
+							</div>
+						</dt>
+						<dd>
+							<div class="request_body">
+								<div class="lists_row">
+									<a class="img" href="">
+										<img src="../images/niming.png" alt="" />
+									</a>
+									<span>
+										讲话的生动：惟妙惟肖 津津有味 绘声绘色 娓娓动听 妙语连珠 滔滔不绝 余音袅袅 活神活现出口成章 行云流水。内容的精彩：引人入胜 如痴如醉 思绪万千 身临其境 字字珠玑 一字千金 精彩绝伦 扣人心弦 韵味无穷 精彩纷呈 跌宕起伏 纷繁复杂 一波三折 文不加点 回肠荡气 文采飞扬 妙趣横生 辞采华美。讲话的生动：惟妙惟肖 津津有味 绘声绘色 娓娓动听 妙语连珠 滔滔不绝 余音袅袅 活神活现出口成章 行云流水。内容的精彩：引人入胜 如痴如醉 思绪万千 身临其境 字字珠玑 一字千金 精彩绝伦 扣人心弦 韵味无穷 精彩纷呈 跌宕起伏 纷繁复杂 一波三折 文不加点 回肠荡气 文采飞扬 妙趣横生 辞采华美。
+										<b class="fr">提交时间：2017-02-20 08:00</b>
+									</span>
+								</div>
+								<div class="lists_row">
+									<a class="img"  href="">
+										<img src="../images/niming.png" alt="" />
+									</a>
+									<span>
+										讲话的生动：惟妙惟肖 津津有味 绘声绘色 娓娓动听 妙语连珠 滔滔不绝 余音袅袅 活神活现出口成章 行云流水。内容的精彩：引人入胜 如痴如醉 思绪万千 身临其境 字字珠玑 一字千金 精彩绝伦 扣人心弦 韵味无穷 精彩纷呈 跌宕起伏 纷繁复杂 一波三折 文不加点 回肠荡气 文采飞扬 妙趣横生 辞采华美。讲话的生动：惟妙惟肖 津津有味 绘声绘色 娓娓动听 妙语连珠 滔滔不绝 余音袅袅 活神活现出口成章 行云流水。内容的精彩：引人入胜 如痴如醉 思绪万千 身临其境 字字珠玑 一字千金 精彩绝伦 扣人心弦 韵味无穷 精彩纷呈 跌宕起伏 纷繁复杂 一波三折 文不加点 回肠荡气 文采飞扬 妙趣横生 辞采华美。
+										<b class="fr">提交时间：2017-02-20 08:00</b>
+									</span>
+								</div>
+							</div>
+							<div class="page">
+								<a href="">首页</a>
+								<a href="" class="now">1</a>
+								<a href="">2</a>
+								<a href="">3</a>
+								<a href="">4</a>
+								<a href="">5</a>
+								<a href="">6</a>
+								<a href="">7</a>
+								<a href="">8</a>
+								<a href="">9</a>
+								<a href="">10</a>
+								<a href="">尾页</a>
+								<a href="">上一页</a>
+								<a href="">下一页</a>
+							</div>
+						</dd>
+					</li>
+				</ul>
+			</div>
+			<!--回顶部-->
+			<div id="backtop">
+				<i class="iconfont">&#xe634;</i>
+			</div>
+		</div>
+		<footer id="footer"></footer>
+		<script type="text/javascript">
+			$(function(){
+				$('.objective_lists').find('li:has(dt)').find('.toggle').click(function(){
+	                var $next = $(this).parent().next('dd');
+	                if($next.is(':hidden')){
+						$(this).parent().siblings('li').removeClass('active');
+	                   	$(this).parents('li').addClass('active');
+	                    $next.stop().slideDown();
+	                    if($(this).parents('li').siblings('li').children('dd').is(':visible')){
+	                        $(this).parents("li").siblings("li").removeClass('active');
+	                        $(this).parents("li").siblings("li").find("dd").slideUp();
+	                    }
+	                }else{
+	                    $(this).parents('li').removeClass('active');
+	                    $next.stop().slideUp();
+	                }
+	            })
+				backTop('#backtop',300);
+			})
+		</script>
+	</body>
+</html>
